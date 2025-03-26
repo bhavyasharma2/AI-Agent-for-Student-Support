@@ -1,6 +1,6 @@
-# ASKIVA - AI-Powered Academic Chatbot  
+# AI-Powered Academic Chatbot  
 
-ASKIVA is an **AI-driven academic chatbot** designed to assist students and instructors by providing instant responses, subject-specific insights, and academic guidance.  
+This is an **AI-driven academic chatbot** designed to assist students and instructors by providing instant responses, subject-specific insights, and academic guidance.  
 
 This is a **full-stack** project consisting of a **Next.js** frontend and a **Flask-based** backend.  
 
