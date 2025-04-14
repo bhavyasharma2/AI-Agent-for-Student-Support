@@ -1,21 +1,20 @@
-# AI-Powered Academic Chatbot  
+# ASKIVA - AI-Powered Academic Chatbot  
 
-This is an **AI-driven academic chatbot** designed to assist students and instructors by providing instant responses, subject-specific insights, and academic guidance.  
+ASKIVA is an **AI-driven academic chatbot** designed to assist students and instructors by providing instant responses, subject-specific insights, and academic guidance.  
 
 This is a **full-stack** project consisting of a **Next.js** frontend and a **Flask-based** backend.  
 
-## Project Status
-
-This project is currently under development and is not yet in its final state. Due to ongoing work and project guidelines, the full source code cannot be shared publicly at this time. Once the implementation is complete, thoroughly reviewed, and meets all necessary standards, the repository will be updated with all relevant files. Until then, only limited information about the project is available, and direct access to the source code remains restricted.
-
-
 ## Features  
 **Role-Based Access:** Separate dashboards for students and instructors.  
-**AI-Powered Chatbot:** Uses **LangChain** and **Agentic LLMs** with open-source models to provide academic assistance.  
+**AI-Powered Chatbot:** Uses **LangChain** and **Google AI** to provide academic assistance.  
 **Secure Authentication:** JWT-based authentication.  
 **Interactive UI:** Built with **Next.js** and **Tailwind CSS**.  
 **Data Storage:** Backend powered by **Flask, SQLAlchemy, and ChromaDB**.  
 
+
+## Project Status
+
+This project is currently under development and is not yet in its final state.
 
 
 ## Getting Started  
@@ -40,6 +39,10 @@ cd soft-engg-project-jan-2025-se-Jan-30
    ```sh
    cd backend
    ```
+2. Create a .env file in this backend directory and add your Google API key
+   ```sh
+   GOOGLE_API_KEY=your-google-api-key-here
+   ```
 2. Create a virtual environment and activate it:  
    ```sh
    python -m venv venv  #Or py -3.12 -m venv venv
@@ -50,7 +53,11 @@ cd soft-engg-project-jan-2025-se-Jan-30
    ```sh
    pip install -r requirements.txt
    ```
-4. Run the backend server:  
+4. Build vector store:  
+   ```sh
+   python utils/pdf_ingest.py
+   ```
+5. Run the backend server:  
    ```sh
    flask run
    ```
@@ -119,13 +126,12 @@ project-root/
 **SQLAlchemy**  
 **ChromaDB**  
 **LangChain**  
-**Agentic LLMs (Open-Source Models)**  
+**Google AI Generative Models**  
 
-### **Other Tools:**  
-**Streamlit** (for AI-based analytics)  
+### **Other Tools:**   
 **Pandas & NumPy** (for data handling)  
 
 
 
-##License  
+## License  
 This project is developed for **academic purposes**. 
