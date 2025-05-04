@@ -1,5 +1,29 @@
-# *.db
-*.rdb
-.env
-venv/
+# Python
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# Pytest
+.pytest_cache/
+
+# Flask-specific
+flask_session/
+instance/
+
+# Test files and uploads
+test.pdf
+test_api.py
+uploads/
+test_uploads/
+
+# ChromaDB
+chroma_db/
+chroma/
+
+# Environment variables
+.env
+
